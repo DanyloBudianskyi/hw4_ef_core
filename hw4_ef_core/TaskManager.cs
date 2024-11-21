@@ -24,11 +24,13 @@ namespace hw4_ef_core
                 .WithMany(u => u.Tasks)
                 .HasForeignKey(t => t.UserId)
                 .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<Task>()
                 .HasRequired(t => t.Project)
                 .WithMany(p => p.Tasks)
                 .HasForeignKey(t => t.ProjectId)
                 .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<User>()
                 .HasRequired(u => u.Project)
                 .WithMany(p => p.Users)

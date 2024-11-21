@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class TaskManagerCreate : DbMigration
+    public partial class first : DbMigration
     {
         public override void Up()
         {
@@ -27,8 +27,8 @@
                         ProjectId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.TaskId)
-                .ForeignKey("dbo.Projects", t => t.ProjectId, cascadeDelete: true)
-                .ForeignKey("dbo.Users", t => t.UserId, cascadeDelete: true)
+                .ForeignKey("dbo.Projects", t => t.ProjectId)
+                .ForeignKey("dbo.Users", t => t.UserId)
                 .Index(t => t.UserId)
                 .Index(t => t.ProjectId);
             

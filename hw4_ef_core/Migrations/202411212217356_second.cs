@@ -3,13 +3,13 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class UserProjectConnection : DbMigration
+    public partial class second : DbMigration
     {
         public override void Up()
         {
             AddColumn("dbo.Users", "ProjectId", c => c.Int(nullable: false));
             CreateIndex("dbo.Users", "ProjectId");
-            AddForeignKey("dbo.Users", "ProjectId", "dbo.Projects", "ProjectId", cascadeDelete: true);
+            AddForeignKey("dbo.Users", "ProjectId", "dbo.Projects", "ProjectId");
         }
         
         public override void Down()

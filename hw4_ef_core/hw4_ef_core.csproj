@@ -55,13 +55,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202411210500575_TaskManagerCreate.cs" />
-    <Compile Include="Migrations\202411210500575_TaskManagerCreate.Designer.cs">
-      <DependentUpon>202411210500575_TaskManagerCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202411212215201_first.cs" />
+    <Compile Include="Migrations\202411212215201_first.Designer.cs">
+      <DependentUpon>202411212215201_first.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202411210517241_UserProjectConnection.cs" />
-    <Compile Include="Migrations\202411210517241_UserProjectConnection.Designer.cs">
-      <DependentUpon>202411210517241_UserProjectConnection.cs</DependentUpon>
+    <Compile Include="Migrations\202411212217356_second.cs" />
+    <Compile Include="Migrations\202411212217356_second.Designer.cs">
+      <DependentUpon>202411212217356_second.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Project.cs" />
@@ -76,11 +76,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202411210500575_TaskManagerCreate.resx">
-      <DependentUpon>202411210500575_TaskManagerCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411212215201_first.resx">
+      <DependentUpon>202411212215201_first.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202411210517241_UserProjectConnection.resx">
-      <DependentUpon>202411210517241_UserProjectConnection.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411212217356_second.resx">
+      <DependentUpon>202411212217356_second.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

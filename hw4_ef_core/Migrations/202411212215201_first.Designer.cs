@@ -7,13 +7,13 @@ namespace hw4_ef_core.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class TaskManagerCreate : IMigrationMetadata
+    public sealed partial class first : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(TaskManagerCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(first));
         
         string IMigrationMetadata.Id
         {
-            get { return "202411210500575_TaskManagerCreate"; }
+            get { return "202411212215201_first"; }
         }
         
         string IMigrationMetadata.Source
